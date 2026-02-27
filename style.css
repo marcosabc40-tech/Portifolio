@@ -1,0 +1,134 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f6;
+}
+
+span { color: #007bff; }
+
+/* Navegação */
+header {
+    background: #fff;
+    padding: 1rem 5%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul { display: flex; list-style: none; }
+nav ul li { margin-left: 20px; }
+nav ul li a { text-decoration: none; color: #333; font-weight: bold; }
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #fff 0%, #e9ecef 100%);
+}
+
+.hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+.hero p { font-size: 1.2rem; color: #666; margin-bottom: 2rem; }
+
+.btn {
+    padding: 12px 30px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover { background: #0056b3; }
+
+/* Grid de Projetos */
+/* Estilo para as tags de tecnologia dentro do card */
+.tags {
+    margin: 10px 0 20px 0;
+}
+
+.tags span {
+    background: #e9ecef;
+    color: #495057;
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 15px;
+    margin-right: 5px;
+    font-weight: 500;
+}
+
+/* Garantir que a imagem preencha o espaço sem distorcer */
+.card-image-container {
+    height: 180px;
+    overflow: hidden;
+}
+
+.card-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card:hover .card-image-container img {
+    transform: scale(1.1); /* Efeito de zoom suave ao passar o mouse */
+}
+
+.link-projeto {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 700;
+}
+.container { padding: 80px 5%; }
+h2 { text-align: center; margin-bottom: 40px; font-size: 2rem; }
+
+.grid-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.card:hover { transform: translateY(-10px); }
+.card img { width: 100%; display: block; }
+.card-body { padding: 20px; }
+.link-projeto { text-decoration: none; color: #007bff; font-weight: bold; }
+
+/* Rodapé */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 60px 5%;
+}
+
+.social-links { margin: 20px 0; }
+.social-links a { color: #fff; margin: 0 10px; text-decoration: none; border-bottom: 1px solid #007bff; }
+.copyright { font-size: 0.8rem; margin-top: 30px; opacity: 0.6; }
